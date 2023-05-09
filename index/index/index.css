@@ -1,0 +1,342 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+.hello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('stock/background6.png');
+    background-position: center;
+    background-size: cover;
+    margin-left: 0px;
+    margin-top: 170px;
+    
+}
+
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 750px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+    .inputbox label {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 1em;
+        pointer-events: none;
+        transition: .5s;
+    }
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.NofileChoosen {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 88%;
+    left: 30%;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #ebe7e7;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.ChooseFile {
+    font-size: .9em;
+    color: #f7bdbd;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+    .ChooseFile p a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: 600;
+    }}
+nav {
+    position: fixed;
+    top: 90px;
+    display: flex;
+    padding: 1% 18%;
+    justify-content: space-between;
+    background: white;
+   
+}
+
+    nav img {
+        width: 150px;
+    }
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    margin-top: 120px;
+    position:fixed;
+    margin-left:120px;
+    margin-top:-50px;
+}
+
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 2px 13px;
+        position: relative;
+    }
+
+        .nav-links ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: red;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+
+.text-box {
+    width: 90%;
+    color: white;
+}
+
+    .text-box h1 {
+        font-size: 35px;
+    }
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: red;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -500px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+nav1 {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    padding: 1% 20%;
+    justify-content: space-between;
+    background: #05CA54;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav1-links {
+    flex: 1;
+    text-align: right;
+}
+
+    .nav1-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 2px 13px;
+        position: relative;
+    }
+
+        .nav1-links ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .nav1-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: red;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+        .nav1-links ul li:hover::after {
+            width: 100%;
+        }
+
+nav1 .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav1-links ul li {
+        display: block;
+    }
+
+    .nav1-links {
+        position: absolute;
+        background: white;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -500px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav1 .fa {
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+.row {
+    display: flex;
+    margin-top: -90px;
+    margin-left: 0px;
+    margin-bottom: -20px;
+    position: relative;
+}
+
+.row-one {
+    flex-basis: 31%;
+    background: b;
+    border-radius: 1px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    background: black;
+}
+
+.row-one-Links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 3px 12px;
+    position: relative;
+}
+
+    .row-one-Links ul li a {
+        color: #4AF8CE;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .row-one-Links ul li::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: red;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    .row-one-Links ul li:hover::after {
+        width: 100%;
+    }
+p {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px;
+}
+hr {
+    margin-top: 10px;
+    line-height: 10px;
+    margin-left: -230px;
+    margin-right: -250px;
+}
+.bag{
+    margin-top:90px;
+}
